@@ -188,7 +188,7 @@ This cells showns the activation of the first two convolution layers of the netw
 On the first layer the images still recognizable, on the second convolution, the image begins to seen indistingishable.
 On the next layers the activation became just a handfull of dots on the matrix.
 
-![alt text][featuremap1]
+![alt text][feature1]
 
-![alt text][featuremap2]
+![alt text][feature2]
 
