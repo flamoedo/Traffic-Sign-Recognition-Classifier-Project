@@ -57,11 +57,12 @@ on each dataset, although the classes are unbalanced.
 
 ### Design and Test a Model Architecture
 
-As a first step, the images are normalized, so the values of the array will be in a range from 0 to 1, that is most apropriated 
+On the preprocess the images are normalized, so the values of the array will be in a range from 0 to 1, that is most apropriated 
 for the CNN learning process.
 There are is no significative changes to the image after this conversion.
+After that, the database is shuffled, so every time, the learning process is run, the order of images is direfent from the previous.
 
-Here is an example of a traffic sign image before and after grayscaling.
+Here is an example of a traffic sign image after normalization.
 
 ![alt text][image2]
 
@@ -73,9 +74,12 @@ My final model consisted of the following layers:
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Convolution 1x1     	| 1x1 stride, valid padding, outputs 28x28x6 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
+| Max pooling    	| 2x2 stride, outputs 14x14x6 	|
+| Convolution 1x1     	| 1x1 stride, valid padding, outputs 10x10x16 	|
+| RELU					|												|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
 | Convolution 3x3	    | etc.      									|
 | Fully connected		| etc.        									|
 | Softmax				| etc.        									|
