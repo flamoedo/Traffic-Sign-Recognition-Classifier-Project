@@ -152,6 +152,26 @@ Testing the model on 21 images, the model was able to correctly guess 20 out of 
 
 The code for making predictions on my final model is located among the ending cells of my Ipython notebook.
 
+| Image	1		        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Speed Limit (70km/h)      		| 100%  									| 
+| Speed Limit (30km/h)     			| 0% 										|
+| Speed Limit (20km/h) 					| 0%											|
+| Speed Limit (80km/h)      		| Keep right ahead					 				|
+| Speed Limit (50km/h) 		| Double Curve      							|
+
+
+| Image		2	        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Speed Limit (120km/h)      		| Speed Limit (70km/h)  									| 
+| Speed Limit (100km/h)     			| Speed Limit (120km/h) 										|
+| No passing for vehicles over 3.5 metric tons					| Keep right											|
+| Speed Limit (80km/h)       		| Keep right ahead					 				|
+| Priority road			| Double Curve      							|
+
+
+
+
 For the second image, the model is relatively sure that this is Speed Limt (120 km/h), and the image does contain a Speed Limt (100 km/h). The rest of the images ware correctely predicted, on a very shure accuracy of almost 100%. So I think that the images on the test data set ware the same as the training set.
 
 ![alt text][image9]
