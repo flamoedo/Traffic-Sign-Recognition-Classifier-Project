@@ -1,6 +1,6 @@
 # **Traffic Sign Recognition** 
 
-## Writeup Template
+## Writeup
 
 ---
 
@@ -27,6 +27,9 @@ The goals / steps of this project are the following:
 [image8]: ./examples/feature6.png "Traffic Sign 5"
 [chart1]: ./examples/histogram.png "Histogram"
 [image9]: ./examples/softmax.png "Softmax Predictions"
+[feature1]: ./examples/featuremap1.png "Feature Map 1"
+[feature2]: ./examples/featuremap1.png "Feature Map 2"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -185,4 +188,7 @@ This cells showns the activation of the first two convolution layers of the netw
 On the first layer the images still recognizable, on the second convolution, the image begins to seen indistingishable.
 On the next layers the activation became just a handfull of dots on the matrix.
 
+![alt text][featuremap1]
+
+![alt text][featuremap2]
 
