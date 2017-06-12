@@ -28,7 +28,7 @@ The goals / steps of this project are the following:
 [chart1]: ./examples/histogram.png "Histogram"
 [image9]: ./examples/softmax.png "Softmax Predictions"
 [feature1]: ./examples/featuremap1.png "Feature Map 1"
-[feature2]: ./examples/featuremap1.png "Feature Map 2"
+[feature2]: ./examples/featuremap2.png "Feature Map 2"
 
 
 ## Rubric Points
@@ -160,19 +160,41 @@ The code for making predictions on my final model is located among the ending ce
 | Speed Limit (70km/h)      		| 100%  									| 
 | Speed Limit (30km/h)     			| 0% 										|
 | Speed Limit (20km/h) 					| 0%											|
-| Speed Limit (80km/h)      		| Keep right ahead					 				|
-| Speed Limit (50km/h) 		| Double Curve      							|
+| Speed Limit (80km/h)      		| 0%					 				|
+| Speed Limit (50km/h) 		| 0%      							|
 
 
 | Image		2	        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Speed Limit (120km/h)      		| Speed Limit (70km/h)  									| 
-| Speed Limit (100km/h)     			| Speed Limit (120km/h) 										|
-| No passing for vehicles over 3.5 metric tons					| Keep right											|
-| Speed Limit (80km/h)       		| Keep right ahead					 				|
-| Priority road			| Double Curve      							|
+| Speed Limit (120km/h)      		| 95%  									| 
+| Speed Limit (100km/h)     			| 5% 										|
+| No passing for vehicles over 3.5 metric tons					| 0%											|
+| Speed Limit (80km/h)       		| 0%					 				|
+| Priority road			| 0%      							|
 
+| Image		3	        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Keep right      		| 100%  									| 
+| Go straight or right     			| 0% 										|
+| Children crossing					| 0%											|
+| Turn left ahead       		| 0%					 				|
+| General caution			| 0%      							|
 
+| Image		4	        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Turn right ahead      		| 100%  									| 
+| Turn left ahead     			| 0% 										|
+| Traffic signals					| 0%											|
+| Go strainght or right       		| 0%					 				|
+| Road work			| 0%      							|
+
+| Image		5	        |     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Double curve      		| 100%  									| 
+| Pedestrians     			| 0% 										|
+| Right-of-way at the next inersection					| 0%											|
+| Roundabout mandatory       		| 0%					 				|
+| Wild animals crossing			| 0%      							|
 
 
 For the second image, the model is relatively sure that this is Speed Limt (120 km/h), and the image does contain a Speed Limt (100 km/h). The rest of the images ware correctely predicted, on a very shure accuracy of almost 100%. So I think that the images on the test data set ware the same as the training set.
