@@ -50,8 +50,7 @@ signs data set:
 
 #### 2. Exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing that the proportional distribution of classes
-on each dataset, although the classes are unbalanced.
+Here is an exploratory visualization of the data set. It is a bar chart showing that, although the classes are unbalanced, they follows the same distribution on each dataset.
 
 ![alt text][chart1]
 
@@ -80,24 +79,28 @@ My final model consisted of the following layers:
 | Convolution 1x1     	| 1x1 stride, valid padding, outputs 10x10x16 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Flatten 	    |      									|
+| RELU					|												|
+| Fully connected		| output 84       									|
+| RELU					|												|
+| Fully connected		| output 43       									|
+| Softmax				|        									|
+
  
 
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an ....
+To train the model, I used adam adaptive learning rate, learning rate 0.003, 20 epochs, batch size 90.
 
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+#### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+
+To achieve the validation set accuracy above 0.933, I tried many combinations of learning rate, epocks and batches size.
+The validation is calculated on the end of every epock, and the test was calculated after the end of training process.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* validation set accuracy of 0.933
+* test set accuracy of 0.911
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
